@@ -2,9 +2,9 @@
 class Getparty < Formula
   desc "HTTP Download Manager with multi-parts"
   homepage "https://github.com/vbauerster/getparty"
-  url "https://github.com/vbauerster/getparty/releases/download/v1.6.0/getparty_1.6.0_Darwin_x86_64.tar.gz"
-  version "1.6.0"
-  sha256 "f09978b452d6990c7f2d2b851fb4782bd7450f6069437f2c7f6b17af53eb0810"
+  url "https://github.com/vbauerster/getparty/releases/download/v1.6.1/getparty_1.6.1_Darwin_x86_64.tar.gz"
+  version "1.6.1"
+  sha256 "1457c6222fc62eab96d332584e45f6a82be5bed11382b4a42990ed4427f8e2e4"
 
   def install
     bin.install "getparty"
