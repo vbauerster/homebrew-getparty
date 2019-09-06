@@ -2,16 +2,16 @@
 class Getparty < Formula
   desc "HTTP Download Manager with multi-parts"
   homepage "https://github.com/vbauerster/getparty"
-  version "1.7.4"
+  version "1.7.5"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/vbauerster/getparty/releases/download/v1.7.4/getparty_1.7.4_Darwin_x86_64.tar.gz"
-    sha256 "a6e1967bd64492993e78e1528ff3b5e29cd6be3c1bfa03abeceb4f07a8589f37"
+    url "https://github.com/vbauerster/getparty/releases/download/v1.7.5/getparty_1.7.5_Darwin_x86_64.tar.gz"
+    sha256 "6136195b2d241016a46a119f0af40ec4871f1ce64a78684f13c715b3e9162800"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.7.4/getparty_1.7.4_Linux_x86_64.tar.gz"
-      sha256 "fe1d4669925b0da989a4a1cff21159a03f962852749d1e9237cb459f434252ff"
+      url "https://github.com/vbauerster/getparty/releases/download/v1.7.5/getparty_1.7.5_Linux_x86_64.tar.gz"
+      sha256 "0e2137e472bd4b946a670f5e759aab456495e91bc5c392d95fbeba4ecd42cb48"
     end
   end
 
