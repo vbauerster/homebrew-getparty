@@ -2,24 +2,24 @@
 class Getparty < Formula
   desc "HTTP Download Manager with multi-parts"
   homepage "https://github.com/vbauerster/getparty"
-  version "1.7.6"
+  version "1.7.7"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/vbauerster/getparty/releases/download/v1.7.6/getparty_1.7.6_Darwin_x86_64.tar.gz"
-    sha256 "e8fba1bf7dbc607794910bce3f11a383d14303d701424dd7360af3b5e77ba41b"
+    url "https://github.com/vbauerster/getparty/releases/download/v1.7.7/getparty_1.7.7_Darwin_x86_64.tar.gz"
+    sha256 "3659734736533ca758e1a7a0bcf19a441b49e6aebf4028b1e944694068933659"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.7.6/getparty_1.7.6_Linux_x86_64.tar.gz"
-      sha256 "3c91de524d538070c90322ab43cd1f6a4b0b8b40f9ae167a93f955b983ea3317"
+      url "https://github.com/vbauerster/getparty/releases/download/v1.7.7/getparty_1.7.7_Linux_x86_64.tar.gz"
+      sha256 "58eecdf1bb6968af999cbb537d583230750d5e70d461d2343b8bc9c9b5314339"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vbauerster/getparty/releases/download/v1.7.6/getparty_1.7.6_Linux_arm64.tar.gz"
-        sha256 "8fb4b8b5bdf886dec56ac6b2d0ffbd5caaf1eb0b2669b9e0533a2d6ade70b7a1"
+        url "https://github.com/vbauerster/getparty/releases/download/v1.7.7/getparty_1.7.7_Linux_arm64.tar.gz"
+        sha256 "9961bdcbdde9381bd675eeb8fee1f5f401d1b9a21e547db2a054e61390e5de4e"
       else
-        url "https://github.com/vbauerster/getparty/releases/download/v1.7.6/getparty_1.7.6_Linux_armv6.tar.gz"
-        sha256 "9c70a61acf5148725ef6d74d164b2dc818be65e0ddbf7e5682b5da08e40f18a1"
+        url "https://github.com/vbauerster/getparty/releases/download/v1.7.7/getparty_1.7.7_Linux_armv6.tar.gz"
+        sha256 "27caf9e52201bcc2982939b8c3ab5e6619a1e4e2ac7a4a300de672a9d6b2b9f9"
       end
     end
   end
