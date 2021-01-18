@@ -5,24 +5,24 @@
 class Getparty < Formula
   desc "HTTP Download Manager with multi-parts"
   homepage "https://github.com/vbauerster/getparty"
-  version "1.9.0"
+  version "1.9.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/vbauerster/getparty/releases/download/v1.9.0/getparty_1.9.0_Darwin_x86_64.tar.gz"
-    sha256 "e8066fee7a4a7028aae72aa39bdb26764a9f5cc68fd29c483cac4ebbfcedd8cb"
+    url "https://github.com/vbauerster/getparty/releases/download/v1.9.1/getparty_1.9.1_Darwin_x86_64.tar.gz"
+    sha256 "5f861aa45bb061770ccaa53132fd8a4d405995fbff4079239e0ee24367500316"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/vbauerster/getparty/releases/download/v1.9.0/getparty_1.9.0_Linux_x86_64.tar.gz"
-    sha256 "63bd662245192406a776ebcf15c3ae53ca014a379d18ff3e36c33d8cef5dc0d1"
+    url "https://github.com/vbauerster/getparty/releases/download/v1.9.1/getparty_1.9.1_Linux_x86_64.tar.gz"
+    sha256 "66a09d77eb3f57b6bf5caad1845b43a4da047b946b34ea855783410b0431aaf8"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/vbauerster/getparty/releases/download/v1.9.0/getparty_1.9.0_Linux_armv6.tar.gz"
-    sha256 "f8b04263047820ffce6efe6ff9cd49d162481ed0146be740865b3399e793cd0d"
+    url "https://github.com/vbauerster/getparty/releases/download/v1.9.1/getparty_1.9.1_Linux_armv6.tar.gz"
+    sha256 "72d4c41b08d3c138c99d24485620f2c4232ce3ab23a407a8b3ef5e8ead624724"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/vbauerster/getparty/releases/download/v1.9.0/getparty_1.9.0_Linux_arm64.tar.gz"
-    sha256 "9f3f37feafe0ca03c0417bff29b89f2294c01ecafbf293d9d0fe998ff612fbbe"
+    url "https://github.com/vbauerster/getparty/releases/download/v1.9.1/getparty_1.9.1_Linux_arm64.tar.gz"
+    sha256 "d00dd3c07e7a7484bcb47554adaaf23c6d7c62706c5098b496367be2baa172f3"
   end
 
   def install
