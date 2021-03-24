@@ -5,24 +5,28 @@
 class Getparty < Formula
   desc "HTTP Download Manager with multi-parts"
   homepage "https://github.com/vbauerster/getparty"
-  version "1.10.0"
+  version "1.10.1"
   bottle :unneeded
 
-  if OS.mac?
-    url "https://github.com/vbauerster/getparty/releases/download/v1.10.0/getparty_1.10.0_Darwin_x86_64.tar.gz"
-    sha256 "9689a846b9fd4fb9fcfc4baef7439fe12d94816250cf67f81defa3c15e7ebe2a"
+  if OS.mac? && Hardware::CPU.intel?
+    url "https://github.com/vbauerster/getparty/releases/download/v1.10.1/getparty_1.10.1_Darwin_x86_64.tar.gz"
+    sha256 "9116760d74ef2d84dc2e2b1ab5604842e0053214d9fc2b50c1fcd03bcc4dc674"
+  end
+  if OS.mac? && Hardware::CPU.arm?
+    url "https://github.com/vbauerster/getparty/releases/download/v1.10.1/getparty_1.10.1_Darwin_arm64.tar.gz"
+    sha256 "d030c49df1c1cfdb81688f5a67c7a1475e29f5c9bff355872486affc5249bb8a"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/vbauerster/getparty/releases/download/v1.10.0/getparty_1.10.0_Linux_x86_64.tar.gz"
-    sha256 "87d1473cb2798681ced374f37ab50d37e7e4f97e20f2bed476391516c12818fd"
+    url "https://github.com/vbauerster/getparty/releases/download/v1.10.1/getparty_1.10.1_Linux_x86_64.tar.gz"
+    sha256 "918ff7f1209ab01db1b360cf2843b2d2ba84df26d0659bb857b0b5b251c16eb5"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/vbauerster/getparty/releases/download/v1.10.0/getparty_1.10.0_Linux_armv6.tar.gz"
-    sha256 "e7b24fc82c91fe163186fdac087066262c47574f1a12718f2a378704b5377577"
+    url "https://github.com/vbauerster/getparty/releases/download/v1.10.1/getparty_1.10.1_Linux_armv6.tar.gz"
+    sha256 "2e306615623e4384f9cd8e15bf365b22a7c35e14541fa3f7ef7e7f4e25373dd1"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/vbauerster/getparty/releases/download/v1.10.0/getparty_1.10.0_Linux_arm64.tar.gz"
-    sha256 "a725022c49e091772f532579c1ec24c15fbb7bd27b15b8ee1392d94f62f45497"
+    url "https://github.com/vbauerster/getparty/releases/download/v1.10.1/getparty_1.10.1_Linux_arm64.tar.gz"
+    sha256 "fedca254501735291513e0ae40bc1b3046936866a26c7faf159973017334d6b1"
   end
 
   def install
