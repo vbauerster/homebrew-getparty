@@ -5,32 +5,32 @@
 class Getparty < Formula
   desc "HTTP Download Manager with multi-parts"
   homepage "https://github.com/vbauerster/getparty"
-  version "1.11.3"
+  version "1.12"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.11.3/getparty_1.11.3_Darwin_x86_64.tar.gz"
-      sha256 "3cf48389ab0de3b6020f395b71b98e355acd6954bb16699dacfc21c5aaea8a9f"
+      url "https://github.com/vbauerster/getparty/releases/download/v1.12/getparty_1.12_Darwin_x86_64.tar.gz"
+      sha256 "9be8c7c992240c77ab1a35ef5ece17d83fc4e477bef2089ba750d405cad79c44"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.11.3/getparty_1.11.3_Darwin_arm64.tar.gz"
-      sha256 "0dd59d30735474cf16ea1ee2c11ee4ec36f5da6e2bca6042318240047a351da6"
+      url "https://github.com/vbauerster/getparty/releases/download/v1.12/getparty_1.12_Darwin_arm64.tar.gz"
+      sha256 "164a54068900bd63502eeb07410622ede8c0c8b110c68eda4bbed188cf6594a6"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.11.3/getparty_1.11.3_Linux_x86_64.tar.gz"
-      sha256 "a4194bddc2c7ac54e15be124099c99bb3472020a426b7a2217193f1f34026200"
+      url "https://github.com/vbauerster/getparty/releases/download/v1.12/getparty_1.12_Linux_x86_64.tar.gz"
+      sha256 "c5bfb7c946c436be25787111a8aadcf1da221fe870a605bce19c765f78459941"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.11.3/getparty_1.11.3_Linux_armv6.tar.gz"
-      sha256 "4853f7b8de318e4cdeafb64f8eff713360af9f57bc7f988caec3e06ca3e0adac"
+      url "https://github.com/vbauerster/getparty/releases/download/v1.12/getparty_1.12_Linux_armv6.tar.gz"
+      sha256 "8ddd3ee43eb2bfae3d22d6bea3cfa3779f74acf69c473383dd945bb72ca45512"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.11.3/getparty_1.11.3_Linux_arm64.tar.gz"
-      sha256 "58d999ec219746a185558634b71cb07ce624327d9c7cf4c7cd2359d2fb214ee8"
+      url "https://github.com/vbauerster/getparty/releases/download/v1.12/getparty_1.12_Linux_arm64.tar.gz"
+      sha256 "d13f7bdb4b0bf647bce863d2eb25d5ae35dd4d04700f41b1418432aa8de4b49e"
     end
   end
 
