@@ -5,20 +5,20 @@
 class Getparty < Formula
   desc "HTTP Download Manager with multi-parts"
   homepage "https://github.com/vbauerster/getparty"
-  version "1.14.1"
+  version "1.14.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.14.1/getparty_1.14.1_darwin_arm64.tar.gz"
-      sha256 "49d81cae704a30f5bfe53a359fccfa957ffe3530368c983bec7799d396f20a9e"
+      url "https://github.com/vbauerster/getparty/releases/download/v1.14.2/getparty_1.14.2_darwin_arm64.tar.gz"
+      sha256 "51ad95bbcb59dd5aaec58762ac03a3895efbe7738f68a30a14a1d4ac742fe9f5"
 
       def install
         bin.install "getparty"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.14.1/getparty_1.14.1_darwin_amd64.tar.gz"
-      sha256 "24476ceeaf0cc0f87f4903d5328db6b0996ac4fcd178f548c67048403ccb19ad"
+      url "https://github.com/vbauerster/getparty/releases/download/v1.14.2/getparty_1.14.2_darwin_amd64.tar.gz"
+      sha256 "ae60dbde7352c573db5c8943a25d36dd09c8a2819eeec88091534cc9bcacc709"
 
       def install
         bin.install "getparty"
@@ -28,24 +28,24 @@ class Getparty < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.14.1/getparty_1.14.1_linux_amd64.tar.gz"
-      sha256 "be9d3a783b7d4d0f32b6d1c5e9c3cdca9f5dc0b3289d94db9b6e5e9f5618e48d"
-
-      def install
-        bin.install "getparty"
-      end
-    end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.14.1/getparty_1.14.1_linux_arm64.tar.gz"
-      sha256 "297b7b3d25bc13cc21301bfcf0b31cd3307677ca84d02f7b2288d6de51fd9249"
+      url "https://github.com/vbauerster/getparty/releases/download/v1.14.2/getparty_1.14.2_linux_amd64.tar.gz"
+      sha256 "e9540239c742031f79c388707cdda293c77347e76e8780136ff5c5a728fb1906"
 
       def install
         bin.install "getparty"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.14.1/getparty_1.14.1_linux_armv6.tar.gz"
-      sha256 "1eb9c698374445503c8eed266d21de5e8449a015b22351017631409f2f7c5623"
+      url "https://github.com/vbauerster/getparty/releases/download/v1.14.2/getparty_1.14.2_linux_armv6.tar.gz"
+      sha256 "8ea56bef13702965206006f75b2f5abe34695388ded1f1f8ccd14911593aa690"
+
+      def install
+        bin.install "getparty"
+      end
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/vbauerster/getparty/releases/download/v1.14.2/getparty_1.14.2_linux_arm64.tar.gz"
+      sha256 "db795b641f01969af21809bf302067bedb60d36399610fb981805611209b3740"
 
       def install
         bin.install "getparty"
