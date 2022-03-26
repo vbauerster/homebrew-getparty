@@ -5,20 +5,20 @@
 class Getparty < Formula
   desc "HTTP Download Manager with multi-parts"
   homepage "https://github.com/vbauerster/getparty"
-  version "1.17"
+  version "1.17.1"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.17/getparty_1.17_darwin_amd64.tar.gz"
-      sha256 "e43462bdd139bcf26d7247668f3e0e7485b1997ca4a57a8b27632ebdf78dab7a"
+    if Hardware::CPU.arm?
+      url "https://github.com/vbauerster/getparty/releases/download/v1.17.1/getparty_1.17.1_darwin_arm64.tar.gz"
+      sha256 "8bad2a20292003eb30414cdd3e7286b47e69328bd283a8b93e5466084e54789d"
 
       def install
         bin.install "getparty"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.17/getparty_1.17_darwin_arm64.tar.gz"
-      sha256 "358e85fa7d7fc2d513db83f97e6dba81f404e013eea86db566c95433072db093"
+    if Hardware::CPU.intel?
+      url "https://github.com/vbauerster/getparty/releases/download/v1.17.1/getparty_1.17.1_darwin_amd64.tar.gz"
+      sha256 "2d258888b0f251a6b166b4f9568224afb66fac1e24e8a59bd9dbd5f795448fab"
 
       def install
         bin.install "getparty"
@@ -27,17 +27,17 @@ class Getparty < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.17/getparty_1.17_linux_amd64.tar.gz"
-      sha256 "ec0e108efbda82849e4203961dd62897298c0513c35d4107faf87dfd8e60daba"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/vbauerster/getparty/releases/download/v1.17.1/getparty_1.17.1_linux_arm64.tar.gz"
+      sha256 "316fa78a51e7115f63877b0a65cf71846ffaa5d2216c38b6d92f69b1089fd5ee"
 
       def install
         bin.install "getparty"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.17/getparty_1.17_linux_arm64.tar.gz"
-      sha256 "fce6825e991b1962784df215a6bc59635429ecb1c3a5b249c628f6eaca3bd224"
+    if Hardware::CPU.intel?
+      url "https://github.com/vbauerster/getparty/releases/download/v1.17.1/getparty_1.17.1_linux_amd64.tar.gz"
+      sha256 "498a6f78188536d185e9ec45f60f97ea7320815a37c18e1852b122b2f108c5d2"
 
       def install
         bin.install "getparty"
