@@ -5,20 +5,20 @@
 class Getparty < Formula
   desc "HTTP Download Manager with multi-parts"
   homepage "https://github.com/vbauerster/getparty"
-  version "1.19.1"
+  version "1.19.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.19.1/getparty_1.19.1_darwin_arm64.tar.gz"
-      sha256 "e8325f7e891ef05ebd057375b5ee14a3c7f2bbceea077a53e02471ac949caf07"
+      url "https://github.com/vbauerster/getparty/releases/download/v1.19.2/getparty_1.19.2_darwin_arm64.tar.gz"
+      sha256 "0f5df1d7abd9a91bc7cef23114c604c9b2ab19a1fabf37ccb387889694c685bc"
 
       def install
         bin.install "getparty"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.19.1/getparty_1.19.1_darwin_amd64.tar.gz"
-      sha256 "0555c9dff5dc39654d3be4b29ddbeb2903a3d1adaebfa5902205e4b14af85c75"
+      url "https://github.com/vbauerster/getparty/releases/download/v1.19.2/getparty_1.19.2_darwin_amd64.tar.gz"
+      sha256 "80915ec5e86941af472630e8b693485fca0e8faefcd965a02b6619acf466232b"
 
       def install
         bin.install "getparty"
@@ -28,16 +28,16 @@ class Getparty < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.19.1/getparty_1.19.1_linux_amd64.tar.gz"
-      sha256 "0b38e32ddecf56f1f227232e3485c0dc31d04d9bb02e7f77fa74dfe20ea387f5"
+      url "https://github.com/vbauerster/getparty/releases/download/v1.19.2/getparty_1.19.2_linux_amd64.tar.gz"
+      sha256 "a7ed0cdeb79a298048028dc0a287e4d8910b7398515baa2ea979f96fd806ca0f"
 
       def install
         bin.install "getparty"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.19.1/getparty_1.19.1_linux_arm64.tar.gz"
-      sha256 "79c174b632bd7b1acdd5f4faa16a496f891122afd248d57f074b82c43f068acb"
+      url "https://github.com/vbauerster/getparty/releases/download/v1.19.2/getparty_1.19.2_linux_arm64.tar.gz"
+      sha256 "c5ba1dd20b64bbb986f2e897fc6b57c690bebc147d46c7c3382b86325c19a12e"
 
       def install
         bin.install "getparty"
