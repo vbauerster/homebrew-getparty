@@ -5,20 +5,20 @@
 class Getparty < Formula
   desc "HTTP Download Manager with multi-parts"
   homepage "https://github.com/vbauerster/getparty"
-  version "1.23.3"
+  version "1.23.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.23.3/getparty_Darwin_x86_64.tar.gz"
-      sha256 "15f231dba104fd40c5ae89b865eed0d787bee29ab1b618ebd98667b306736833"
+      url "https://github.com/vbauerster/getparty/releases/download/v1.23.4/getparty_Darwin_x86_64.tar.gz"
+      sha256 "c15ba0e02f6400a97ec6af037a706a0a088b6a4580fef99754b5b1e94b73fa70"
 
       def install
         bin.install "getparty"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.23.3/getparty_Darwin_arm64.tar.gz"
-      sha256 "992e41211c273c79d8b9f268b33e23012b59d023d3668db022b3f3037c78ce37"
+      url "https://github.com/vbauerster/getparty/releases/download/v1.23.4/getparty_Darwin_arm64.tar.gz"
+      sha256 "6e45455c22a976679726add6bd57f11836d91f5745d5deccaf3b4875fcf83e06"
 
       def install
         bin.install "getparty"
@@ -28,15 +28,15 @@ class Getparty < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.23.3/getparty_Linux_x86_64.tar.gz"
-      sha256 "21bda3a1ded98d2af9a7b0a29b1a53079dd41b52585ef2fea02c7ab7ceb35a7a"
+      url "https://github.com/vbauerster/getparty/releases/download/v1.23.4/getparty_Linux_x86_64.tar.gz"
+      sha256 "9311cfdf4be5a3eb146102a9e4510d5a7e87eeab36c10a3c526fc3e84edb052a"
       def install
         bin.install "getparty"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/vbauerster/getparty/releases/download/v1.23.3/getparty_Linux_arm64.tar.gz"
-      sha256 "458a787129c4037929423dea64fdaffb73ef2b17435f92f7ee5410dbf5346882"
+      url "https://github.com/vbauerster/getparty/releases/download/v1.23.4/getparty_Linux_arm64.tar.gz"
+      sha256 "5234821c2d71e26f42d17a90bf433db83cd667df4a071cae4bb61d83f991cb07"
       def install
         bin.install "getparty"
       end
